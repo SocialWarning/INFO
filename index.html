@@ -7,6 +7,133 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>OLÁ MUNDOOO</h1>
+    <div id="header">
+        <nav class="menu">
+          <ul id="itens">
+            <li>
+              <a id="homeIcon" href="../Info/home.html">
+              <img src="../InFo/pictures/logo-info/InFo_logo.png" height="70"/>
+            </a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="#home-banner">Início</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" id="t1"  href="#turmas">Turmas</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="#sobre">Sobre</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    <div id="home-banner">
+      <input type="button" value="❰" class="carrossel-btn" id="btn-left" onclick="next()">
+      <div id="home-banner-img">
+        <img src="../InFo/pictures/banner-home/homeBanner01.png" id="banner-img">
+      </div>
+      <input type="button" value="❱" class="carrossel-btn" id="btn-right" onclick="next()">
+    </div>
+  
+      <div id="turmas">
+        <p id="txtAviso">Escolha o ano que você está cursando</p>
+      </div>
+  
+      <div id="boxes">
+        <input
+          type="submit"
+          value="1° ano"
+          id="btn1"
+          class="btn"
+          onclick="ano1()"
+        />
+        <input
+          type="submit"
+          value="2° ano"
+          id="btn2"
+          class="btn"
+          onclick="ano2()"
+        />
+        <input
+          type="submit"
+          value="3° ano"
+          id="btn3"
+          class="btn"
+          onclick="ano3()"
+        />
+      </div>
+    
+      <div id="sobre" >
+          <p id="txtSobre">Quem somos?</p>
+      </div>
+  
+      <div id="sobre-txt">
+          <p>
+              Somos o Social Warning, um grupo de alunos do
+              IFB com o intuito de ajudar </br> os aludos do
+              EMI-informática divulgando os avisos 
+              referentes a atividades, </br> eventos, provas, entre outros.
+          </p>
+      </div>
+  
+      <div id="pics">
+        <div class="pic-box">
+              <img class="pic" src="../InFo/pictures/pic-criadores/Pic-Aurea.jpg">
+              <p class="aurea">Áurea Falqueto</p>
+              <a class ="aurea-link" href="https://www.instagram.com/aurea_falqueto/" target="blanck">@aurea_falqueto</a>
+        </div>
+        <div class="pic-box">
+              <img class="pic" src="../InFo/pictures/pic-criadores/Pic-Aureo.jpg">
+              <p class="aureo">Áureo Rodrigues</p>
+              <a class ="aureo-link" href="https://www.instagram.com/aureo.rdg/" target="blanck">@aureo.rdg</a>
+        </div>
+        <div class="pic-box">
+              <img class="pic" src="../InFo/pictures/pic-criadores/Pic-Emily.jpg">
+              <p class="emily">Emily Jesus</p>
+              <a class ="emily-link" href="https://www.instagram.com/mimi5s1/" target="blanck">@mimi5s1</a>
+              
+        </div>
+  
+        <div class="pic-box">
+              <img class="pic" src="../InFo/pictures/pic-criadores/Pic-Gabi.jpg">
+              <p class="gabi">Gabriela Dias</p>
+              <a class ="gabi-link" href="https://www.instagram.com/gabi.diaxx/" target="blanck">@gabi.diaxx</a>
+        </div>
+        <div class="pic-box">
+              <img class="pic" src="../InFo/pictures/pic-criadores/Pic-Jao.jpg">
+              <p class="jao">João Viana</p>
+              <a class ="jao-link" href="https://www.instagram.com/joaovvianac/" target="blanck">@joaovvianac</a>
+        </div>
+      </div>
+    
+  
+      <footer>
+        <div id="foot">
+        <div class="footComponents">
+          <p id="footIcon"><img src="../InFo/pictures/logo-info/InFo_logo.png" height="110px"></p>
+          <p id="footCopyrightTxt">2021 © Social Warning!</p>
+        </div>
+          <div class="footComponents">
+            <p id="footContato"> Contate-nos</p>
+            <p class="foot-dados">InfoIFB@gmail.com</p>
+            <p class="foot-dados">(61) 99999-9999</p>
+          </div>
+          <div class="footComponents">
+            <p id="footSiga">Siga-nos</p>
+            <ul id=foot-link>
+              <li id="item-foot">
+              <a href="https://www.instagram.com" target="blanck"> <img src="../InFo/pictures/pic-rodape/instaLogo.png" height="30px"></a>
+              <a href="https://www.instagram.com"  class="txt-link-foot" target="blanck"> </p>Instagram</p>  </a>
+              </li>
+              <li>
+              <a href="https://www.facebook.com" target="blanck"><img src="../InFo/pictures/pic-rodape/faceLogo.png" height="30px"></a>
+              <a href="https://www.facebook.com" class="txt-link-foot" target="blanck"> </p>Facebook</p> </a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </footer>
+    
 </body>
 </html>

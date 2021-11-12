@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Rugaa|PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="estiloPages.css">
+    <title>InFo - 3º ano</title>
+</head>
+<body>
+
+  <div id="header">
+    <nav class="menu">
+      <ul id="itens">
+        <li>
+          <a id="homeIcon" href="../home.html">
+          <img src="../pictures/logo-info/InFo_logo.png" height="70"/>
+        </a>
+        </li>
+        <li class="navItem">
+        <a class="navLink" href="../home.html">Início</a>
+        </li>
+        <li class="navItem">
+          <a class="navLink" id="t1"  href="../home.html#turmas">Turmas</a>
+        </li>
+        <li class="navItem">
+          <a class="navLink" href="#foot">Sobre</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="center" id="titulo-avisos">
+  <p id="titulo-ano">
+    Avisos referentes ao 3º ano:
+  </p>  
+
+  <select id="filtro-avisos" id="ordem-avisos">
+    <option value="last-post">Postado por último</option>
+    <option value="color-post">Relevância</option>
+</select>
+  </div>
+
+  <div class="avisos">
+    <div class="center" id="conteiner-avisos">
+      <div id="box-avisos">
+        <div id="avisos">
+
+          <div class="item-aviso" id="a0">
+            <div class="nome-aviso" id="0">
+              Social Warning - Desenvolvedores do site
+            </div>
+            <div class="texto-aviso" id="txt-001">
+              Bem-vindos ao site de avisos InFo! <br>
+              Para adicionar um novo aviso, basta clicar no botão de "mais" do lado esquerdo dessa aba. <br>
+              Não se esqueça de preencher corretamente os campos e informe a senha necessária.
+            </div>
+            <div class="data-aviso" id="data-001">
+              29/10/2021
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="add-aviso">
+    <button id="btn-add-aviso"><img id="img-btn-add" src="../pictures/pic-btn-add-aviso/pic-add-aviso.png"  width="60px" onclick="criarAviso()" /></button>
+    </div>
+  </div>
+
+  <footer>
+    <div id="foot">
+      <div class="footComponents">
+        <p id="footIcon"><img src="../pictures/logo-info/InFo_logo.png" height="110px"></p>
+        <p id="footCopyrightTxt">2021 © Social Warning!</p>
+      </div>
+        <div class="footComponents">
+          <p id="footContato"> Contate-nos</p>
+          <p class="foot-dados">InfoIFB@gmail.com</p>
+          <p class="foot-dados">(61) 99999-9999</p>
+        </div>
+        <div class="footComponents">
+          <p id="footSiga">Siga-nos</p>
+          <ul id=foot-link>
+            <li id="item-foot">
+            <a href="https://www.instagram.com" target="blanck"> <img src="../pictures/pic-rodape/instaLogo.png" height="30px"></a>
+            <a href="https://www.instagram.com"  class="txt-link-foot" target="blanck"> </p>Instagram</p>  </a>
+            </li>
+            <li>
+            <a href="https://www.facebook.com" target="blanck"><img src="../pictures/pic-rodape/faceLogo.png" height="30px"></a>
+            <a href="https://www.facebook.com" class="txt-link-foot" target="blanck"> </p>Facebook</p> </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+    
+  <div id="btn-modal" class="modal-container">
+      <div class="modal">
+        <button class="fechar">x</button>
+        <p id="titulo-add-aviso">Adicione um novo aviso!</p> <br>
+        <form>
+          <p class="txt-add-aviso">Digite seu nome e ocupação:</p>
+            <input type="text" id="aviso.name" placeholder="Fulano - professor de TI"> <br><br>
+          <p class="txt-add-aviso">Digite o aviso:</p>
+            <textarea id="aviso.txt" cols="40" rows="6"></textarea> <br><br>
+          <p class="txt-add-aviso">Grau de importância:</p> 
+            <label for="nome" class="aln">Mínima:</label>
+            <input type="radio" name="grau-radio" value="1"> <br/> 
+            <label for="nome" class="aln">Média:</label>
+            <input type="radio" name="grau-radio" value="2"> <br/>
+            <label for="nome" class="aln">Máxima:</label>
+            <input type="radio" name="grau-radio" value="3"> <br/> <br/>
+          <p class="txt-add-aviso">Senha:</p>
+            <input type="password" id="aviso.key"><br><br>
+          <input id ="btn-add-new-aviso" type="button" value="Enviar" onclick="checkAndPost()">
+        </form>
+      </div>
+  </div>
+
+  <script src="codePages.js"></script>
+
+  </body>
+</html>

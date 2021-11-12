@@ -294,7 +294,7 @@
     height: 230px;
     color: rgba(0, 0, 0, 0.8);
   }
-/*@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .leftcolumn,.rightcolumn{
         width: 100%;
         padding: 0;
@@ -311,11 +311,4 @@
         width: 100%;
         margin-top: 0;
     }
-}*/
-
-@media screen and (max-width: 300px) {
- /* estilos */
-}
-@media screen and (max-width: 600px) {
-/* Estilos */
 }

@@ -288,7 +288,7 @@
     background-color: rgba(96, 243, 108, 0.829);
   }
 
-/*@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .leftcolumn,.rightcolumn{
         width: 100%;
         padding: 0;
@@ -305,7 +305,7 @@
         width: 100%;
         margin-top: 0;
     }
-}*/
+}
 
 
 #demo01{

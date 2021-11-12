@@ -284,11 +284,11 @@
     width: 190px;
   }
   
-  
   #a0{
     background-color: rgba(96, 243, 108, 0.829);
   }
-@media screen and (max-width: 800px) {
+
+/*@media screen and (max-width: 800px) {
     .leftcolumn,.rightcolumn{
         width: 100%;
         padding: 0;
@@ -305,4 +305,27 @@
         width: 100%;
         margin-top: 0;
     }
+}*/
+
+
+#demo01{
+  background-color: #e5daa5;
 }
+
+#demo02{
+  background-color: #db586e;
+}
+
+#demo03{
+  background-color: #74cbdd
+}
+
+/*@import url(tiny.css) (min-width:300px);
+@import url(small.css) (min-width:600px);
+@import url(big.css) (min-width:900px);
+@media screen and (max-width: 300px) {
+ /* estilos 
+}*/
+/*@media screen and (max-width: 600px) {
+ Estilos 
+}*/

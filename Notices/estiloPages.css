@@ -288,3 +288,21 @@
   #a0{
     background-color: rgba(96, 243, 108, 0.829);
   }
+@media screen and (max-width: 800px) {
+    .leftcolumn,.rightcolumn{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

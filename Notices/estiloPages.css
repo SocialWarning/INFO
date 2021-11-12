@@ -284,7 +284,18 @@
     width: 190px;
   }
   
-  
   #a0{
     background-color: rgba(96, 243, 108, 0.829);
   }
+
+#demo01{
+  background-color: #e5daa5;
+}
+
+#demo02{
+  background-color: #db586e;
+}
+
+#demo03{
+  background-color: #74cbdd
+}

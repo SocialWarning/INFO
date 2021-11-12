@@ -1,12 +1,12 @@
 //Funcões que fazem os botões DA TURMA funcionarem________________________________________________________
 function ano1() {
-    window.location.replace("../INFO/Notices/1ano.html");
+    window.location.replace("../InFo/Notices/1ano.html");
   }
   function ano2() {
-    window.location.replace("../INFO/Notices/2ano.html");
+    window.location.replace("../InFo/Notices/2ano.html");
   }
   function ano3() {
-    window.location.replace("../INFO/Notices/3ano.html");
+    window.location.replace("../InFo/Notices/3ano.html");
   }
   
   //Código para fazer o scrool suave_________________________________________________________________________
@@ -32,10 +32,10 @@ function ano1() {
   
   function next(){
     if(index == 0){
-      img.innerHTML = '<img src="../INFO/pictures/banner-home/homeBanner02.png" id="banner-img">'
+      img.innerHTML = '<img src="../InFo/pictures/banner-home/homeBanner02.png" id="banner-img">'
       index = 1     
     } else if(index == 1){
-      img.innerHTML = '<img src="../INFO/pictures/banner-home/homeBanner01.png" id="banner-img">'
+      img.innerHTML = '<img src="../InFo/pictures/banner-home/homeBanner01.png" id="banner-img">'
       index = 0
     }
   }

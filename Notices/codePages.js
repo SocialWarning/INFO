@@ -56,7 +56,7 @@ function checkAndPost(){
   //Verifica se todos os dados foram corretamente escritos:
     if(nome === '' || aviso  === ''){
       alert("Todos os campos devem estar preenchidos!")
-    } else if(senha != "111"){
+    } else if(senha != "8723"){
       alert("Senha incorreta! Tente novamente.")
     } else {
       

@@ -62,7 +62,27 @@
   #t1 {
     margin-left: -11px;
   }
+
+  #idioma{
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 30%;
+  }
   
+  .idm-btn{
+    font-family: "phi";
+    background-color: #f2f2f2;
+    border: none;
+    width: 40px;
+  }
+  
+  #idm-btn-img{
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  
+  
+
   
   #home-banner{
     display: flex;
@@ -294,21 +314,3 @@
     height: 230px;
     color: rgba(0, 0, 0, 0.8);
   }
-@media screen and (max-width: 800px) {
-    .leftcolumn,.rightcolumn{
-        width: 100%;
-        padding: 0;
-    }
-}
-@media screen and (max-width: 400px){
-    .topnav a{
-        float: none;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}

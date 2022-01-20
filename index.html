@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
     <script src="codeHome.js" defer></script>
     <title>InFo - página inicial</title>
 </head>
+
 <body>
+
     <div id="header">
         <nav class="menu">
           <ul id="itens">
@@ -26,9 +29,17 @@
             <li class="navItem">
               <a class="navLink" href="#sobre">Sobre</a>
             </li>
+            <li class="navItem">
+              <div id="idioma">
+                <button type="button" class="idm-btn" id="idm-btn" onclick="mudarIdioma()">
+                  <img id="idm-btn-img" src="../InFo/pictures/logo-idiomas/brasil.png" width="28px">
+                </button>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
+      
       
     <div id="home-banner">
       <input type="button" value="❰" class="carrossel-btn" id="btn-left" onclick="next()">

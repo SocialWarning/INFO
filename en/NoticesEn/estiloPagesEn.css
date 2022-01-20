@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: "phi";
+    src: url("../fontes/PatuaOne-Regular.ttf");
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+  }
+  
+  #t1 {
+    margin-left: -11px;
+  }
+  
+  #itens {
+    display: flex;
+    margin-left: -540px;
+    list-style: none;
+  }
+  
+  .navLink {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: "phi";
+    padding-top: 20px;
+  }
+  
+  .navLink:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+  }
+  
+  .navItem {
+    margin-left: 120px;
+    font-size: 25px;
+  }
+  
+  #homeIcon {
+    margin-right: -30px;
+  }
+  
+  /*Corpo dos avisos___________________________*/
+  
+  #titulo-avisos{
+  padding-top: 200px;
+  font-family: 'phi';
+  margin-left: -170px;
+  }
+  
+  #titulo-ano{
+    font-size: 35px;
+  }
+  
+  #filtro-avisos{
+    margin-left: 300px;
+    font-size: 20px;
+  }
+  
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #box-avisos{
+    height: 600px;
+    width: 1010px;
+    margin-top: 40px;
+    overflow-y: scroll;
+  }
+  
+  .item-aviso{
+    height: 160px;
+    width: 980px;
+    border-radius: 25px;
+    margin-top: 8px;
+    border: solid 5px;
+  }
+  
+  .nome-aviso{
+    height: 30px;
+    width: 930px;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'phi';
+  }
+  .texto-aviso{
+    height: 90px;
+    width: 930px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .data-aviso{
+    height: 30px;
+    width: 930px;
+    text-align: right;
+    margin-left: 20px;
+    font-family: 'phi';
+    font-size: 20px;
+  }
+  
+  #btn-add-aviso{
+  width: 60px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-top: 50px;
+  margin-left: 20px;
+  }
+  #img-btn-add{
+  opacity: 1;
+  cursor: pointer;
+  }
+  #img-btn-add:hover{
+  opacity: 0.8;
+  }
+  
+  .avisos{
+  display: flex;
+  justify-content: center;
+  }
+  
+  #footIcon {
+    padding-top: 40px;
+  }
+  
+  #footCopyrightTxt {
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #footContato,
+  #footSiga {
+    font-size: 25px;
+    margin-left: 150px;
+    padding-top: 50px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .foot-dados {
+    margin-left: 153px;
+    padding-top: 5px;
+    font-size: 19px;
+  }
+  
+  #foot-link {
+    position: relative;
+    list-style: none;
+    padding-left: 150px;
+  }
+  
+  .txt-link-foot {
+    position: absolute;
+    font-size: 19px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+  
+  }
+  
+  .txt-link-foot:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  #foot {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    background-color: #00eb816e;
+    width: 100%;
+    height: 230px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /*Estilização do PopUp____________________________*/
+  label.aln{
+    display: inline-block;
+    width: 90px;
+  }
+  
+  #titulo-add-aviso{
+    font-size: 24px;
+    font-family: 'phi';
+  }
+  
+  .txt-add-aviso{
+    font-size: 20px;
+    font-family: 'phi';
+  }
+  
+  #btn-add-new-aviso{
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+    font-family: 'phi';
+    border-radius: 10px;
+    background-color: #74cbdd;
+  }
+  
+  .modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container.mostrar{
+    display: flex;
+  }
+  
+  .modal{
+    background-color: #f2f2f2;
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 40px;
+    border: 8px solid #74cbdd;
+    box-shadow: 0 0 0 6px black;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  @keyframes modal {
+    from{
+    opacity: 0;
+    transform: translate3d(0, -300px, 0)
+    }
+    to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+    }
+  }
+  
+  .mostrar .modal{
+    animation: modal .9s
+  }
+  
+  .fechar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #db586e;
+    border: solid 2px;
+    font-family: "PT Mono", monospace;
+    font-size: 1.6em;
+    cursor: pointer;
+  }
+  
+  .input-name{
+    width: 302px;
+  }
+  .input-key{
+    width: 190px;
+  }
+  
+  /*Cor dos avisos de demontração*/
+  #a0{
+    background-color: white
+  }
+  
+  #demo01{
+    background-color: #e5daa5;
+  }
+  
+  #demo02{
+    background-color: #db586e;
+  }
+  
+  #demo03{
+    background-color: #74cbdd
+  }
+  
+  
+  
+  

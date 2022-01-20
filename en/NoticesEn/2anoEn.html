@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Rugaa|PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="estiloPagesEn.css">
+    <script src="codePagesEn.js" defer></script>
+    <title>InFo - 2st grade</title>
+</head>
+<body>
+
+  <div id="header">
+    <nav class="menu">
+      <ul id="itens">
+        <li>
+          <a id="homeIcon" href="../indexEn.html">
+          <img src="../pictures/logo-info/InFo_logo.png" height="70"/>
+        </a>
+        </li>
+        <li class="navItem">
+        <a class="navLink" href="../indexEn.html">Home</a>
+        </li>
+        <li class="navItem">
+          <a class="navLink" id="t1"  href="../indexEn.html#turmas">Classes</a>
+        </li>
+        <li class="navItem">
+          <a class="navLink" href="#foot">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="center" id="titulo-avisos">
+  <p id="titulo-ano">
+    Warnings - 2sr grade:
+  </p>  
+
+  <select id="filtro-avisos" id="ordem-avisos">
+    <option value="last-post">Last posted</option>
+    <option value="color-post">Importance</option>
+</select>
+  </div>
+
+  <div class="avisos">
+    <div class="center" id="conteiner-avisos">
+      <div id="box-avisos">
+        <div id="avisos">
+
+          <div class="item-aviso" id="demo01">
+            <div class="nome-aviso" id="nome-001">Marcos Ramón - Professor de Filosofia</div>
+            <div class="texto-aviso" id="txt-001">Caros alunos, informo que a atividade sobre política dessa semana foi adiada para 17/11</div>
+            <div class="data-aviso" id="data-001">11/16</div>
+          </div>
+
+          <div class="item-aviso" id="demo02">
+            <div class="nome-aviso" id="nome-001">Emily Siqueira - Representante de turma 3ºA</div>
+            <div class="texto-aviso" id="txt-001">Gente, o prazo do trabalho de matemática termina amanhã. Façam logo porque vale 3 pontos!</div>
+            <div class="data-aviso" id="data-001">11/15</div>
+          </div>
+
+          <div class="item-aviso" id="demo03">
+            <div class="nome-aviso" id="nome-001">Sylvana - Coordenadora</div>
+            <div class="texto-aviso" id="txt-001">Vocês estão sendo convidados para participar da 1ª JIP do IFB!O que é: primeira Jornada Interdisciplinar de Pesquisa (JIP) do IFB Campus Brasília.
+              Trata-se de um evento organizado pelo Campus Brasília, gratuito, no formato virtual e que contará com palestras, oficinas, minicursos, mesas e apresentação de trabalhos de pesquisa.</div>
+            <div class="data-aviso" id="data-001">11/13</div>
+          </div>
+
+          <div class="item-aviso" id="a0">
+            <div class="nome-aviso" id="0">
+              Social Warning - Desenvolvedores do site
+            </div>
+            <div class="texto-aviso" id="txt-001">
+              Bem-vindos ao site de avisos InFo! <br>
+              Para adicionar um novo aviso, basta clicar no botão de "mais" do lado esquerdo dessa aba. <br>
+              Não se esqueça de preencher corretamente os campos e informe a senha necessária.
+            </div>
+            <div class="data-aviso" id="data-001">
+              10/29/2021
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="add-aviso">
+    <button id="btn-add-aviso"><img id="img-btn-add" src="../pictures/pic-btn-add-aviso/pic-add-aviso.png"  width="60px" onclick="criarAviso()" /></button>
+    </div>
+  </div>
+
+  <footer>
+    <div id="foot">
+      <div class="footComponents">
+        <p id="footIcon"><img src="../pictures/logo-info/InFo_logo.png" height="110px"></p>
+        <p id="footCopyrightTxt">2021 © Social Warning!</p>
+      </div>
+        <div class="footComponents">
+          <p id="footContato"> Contact-us</p>
+          <p class="foot-dados"> socialwarning.info@gmail.com</p>
+          <p class="foot-dados">(61) 99999-9999</p>
+        </div>
+        <div class="footComponents">
+          <p id="footSiga">Folow us</p>
+          <ul id=foot-link>
+            <li id="item-foot">
+            <a href="https://www.instagram.com" target="blanck"> <img src="../pictures/pic-rodape/instaLogo.png" height="30px"></a>
+            <a href="https://www.instagram.com"  class="txt-link-foot" target="blanck"> </p>Instagram</p>  </a>
+            </li>
+            <li>
+            <a href="https://www.facebook.com" target="blanck"><img src="../pictures/pic-rodape/faceLogo.png" height="30px"></a>
+            <a href="https://www.facebook.com" class="txt-link-foot" target="blanck"> </p>Facebook</p> </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+    
+  <div id="btn-modal" class="modal-container">
+      <div class="modal">
+        <button class="fechar">x</button>
+        <p id="titulo-add-aviso">Add a new warning!</p> <br>
+        <form>
+          <p class="txt-add-aviso">Type your name and occupation:</p>
+            <input type="text" id="aviso.name" placeholder="John - TI teacher"> <br><br>
+          <p class="txt-add-aviso">Type a warning:</p>
+            <textarea id="aviso.txt" cols="40" rows="6"></textarea> <br><br>
+          <p class="txt-add-aviso">importance degree:</p> 
+            <label for="nome" class="aln">Minimum:</label>
+            <input type="radio" name="grau-radio" value="1"> <br/> 
+            <label for="nome" class="aln">Medium:</label>
+            <input type="radio" name="grau-radio" value="2"> <br/>
+            <label for="nome" class="aln">Maximum:</label>
+            <input type="radio" name="grau-radio" value="3"> <br/> <br/>
+          <p class="txt-add-aviso">Password:</p>
+            <input type="password" id="aviso.key"><br><br>
+          <input id ="btn-add-new-aviso" type="button" value="Send" onclick="checkAndPost()">
+        </form>
+      </div>
+  </div>
+  </body>
+</html>
